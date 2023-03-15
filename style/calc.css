@@ -1,0 +1,150 @@
+.calc__container {
+  display: flex;
+  gap: 10px;
+}
+
+.calc__content {
+  flex-basis: 50%;
+}
+
+.calc__title {
+  margin-bottom: 32px;
+}
+
+.calc__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.calc__fieldset_size {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.calc__wrapper-input-size {
+  margin-right: 10px;
+}
+
+.calc__wrapper-input-size:last-child {
+  margin-right: 0;
+}
+
+.calc__text {
+  font-size: 12px;
+  color: #898989;
+  margin-bottom: 2px;
+}
+
+.calc__input-numder {
+  width: 240px;
+  height: 54px;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0 25px;
+}
+
+.calc__input-numder:focus{
+  outline: 1px solid #FFC700;
+}
+
+.calc__fieldset_tariff {
+  margin-bottom: 65px;
+}
+.calc__text_legend {
+  margin-bottom: 16px;
+}
+.calc__wrapper-input-tariff {
+  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calc__wrapper-input-tariff:last-child {
+  margin-right: 0;
+}
+
+.calc__input-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.calc__input-radio::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 50%;
+  
+}
+
+.calc__input-radio:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  background-color: #232020;
+  border: 1px solid #E4E4E4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.calc__input-radio:focus{
+  outline: 1px solid #FFC700;
+  border-radius: 12px;
+}
+
+.calc__input-radio:checked::after{
+  opacity: 1;
+}
+
+.calc__label-radio {
+  text-transform: uppercase;
+}
+
+.calc__total {
+  flex-basis: 50%;
+  display: flex;
+  align-items: flex-end;
+  background-color: #333;
+  background-image: url('../img/calc_img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 50px;
+}
+.calc__result-wrapper {
+  flex-basis: 303px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.calc__result {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.calc__result:last-child {
+  margin-bottom: 0;
+}
