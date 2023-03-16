@@ -29,3 +29,52 @@
 .advantages__item:last-child{
   margin-bottom: 0;
 }
+
+@media (max-width: 1240px) {
+  .advantages__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 90px;
+  }
+
+  .advantages__title {
+    max-width: 330px;
+  }
+
+  .advantages__item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  .advantages__container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .advantages__title {
+    max-width: 440px;
+  }
+
+  .advantages__item {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .advantages__container {
+    padding-left: 26px;
+    padding-right: 26px;
+    gap: 16px;
+  }
+
+  .advantages__title {
+    max-width: 270px;
+  }
+
+  .advantages__item {
+    padding-left: 24px;
+    font-size: 14px;
+  }
+}

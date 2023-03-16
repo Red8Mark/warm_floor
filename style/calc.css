@@ -1,10 +1,10 @@
 .calc__container {
   display: flex;
-  gap: 10px;
+  gap: var(--gap);
 }
 
 .calc__content {
-  flex-basis: 50%;
+  width: var(--width-block);
 }
 
 .calc__title {
@@ -24,6 +24,7 @@
 
 .calc__wrapper-input-size {
   margin-right: 10px;
+  flex-basis: 50%;
 }
 
 .calc__wrapper-input-size:last-child {
@@ -37,7 +38,7 @@
 }
 
 .calc__input-numder {
-  width: 240px;
+  width: 100%;
   height: 54px;
   background-color: #FFFFFF;
   border: 1px solid #E4E4E4;
@@ -119,7 +120,7 @@
 }
 
 .calc__total {
-  flex-basis: 50%;
+  width: var(--width-block);
   display: flex;
   align-items: flex-end;
   background-color: #333;
@@ -128,7 +129,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-  padding: 50px;
+  padding: var(--padding);
 }
 .calc__result-wrapper {
   flex-basis: 303px;
@@ -147,4 +148,92 @@
 
 .calc__result:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1240px) {
+  .calc__title{
+    margin-bottom: 24px;
+  }
+
+  .calc__fieldset_size{
+    margin-bottom: 24px;
+  }
+
+  .calc__fieldset_tariff{
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 920px) {
+  .calc{
+    --width-block: 100%
+  }
+
+  .calc__container{
+    flex-direction: column;
+  }
+
+  .calc__fieldset_tariff{
+    margin-bottom: 36px;
+  }
+
+  .calc__input-numder{
+    height: 36px;
+    padding: 0 16px;
+  }
+
+  .calc__label-radio{
+    font-size: 14px;
+  }
+
+  .calc__text_legend{
+    margin-bottom: 8px;
+  }
+
+  .calc__total{
+    min-height: 220px;
+    align-items: flex-start;
+    background-position: 50% 75%;
+  }
+}
+
+@media (max-width: 560px) {
+  .calc__title{
+    margin-bottom: 16px;
+  }
+
+  .calc__fieldset_size{
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .calc__fieldset_tariff{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .calc__wrapper-input-tariff{
+    margin-right: 0;
+  }
+
+  .calc__wrapper-input-size{
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .calc__wrapper-input-size:last-child{
+    margin-bottom: 0;
+  }
+
+  .calc__total{
+    
+    min-height: auto;
+  }
+
+  .calc__result-wrapper{
+    flex-basis: 100%;
+    padding: 16px;
+  }
 }

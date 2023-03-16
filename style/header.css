@@ -18,3 +18,9 @@
   background-color: #FFC700;
   border: 1px solid transparent;
 }
+
+@media (max-width: 920px) {
+  .logo{
+    width: 124px;
+  }
+}
