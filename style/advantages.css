@@ -31,12 +31,6 @@
 }
 
 @media (max-width: 1240px) {
-  .advantages__container {
-    padding-left: 30px;
-    padding-right: 30px;
-    gap: 90px;
-  }
-
   .advantages__title {
     max-width: 330px;
   }
@@ -64,8 +58,7 @@
 
 @media (max-width: 560px) {
   .advantages__container {
-    padding-left: 26px;
-    padding-right: 26px;
+    padding: 0 26px;
     gap: 16px;
   }
 

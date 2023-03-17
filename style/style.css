@@ -1,7 +1,7 @@
 :root{
-  --width-slide: 590px;
-  --width-block: calc(50% - 10px);
   --gap: 10px;
+  --width-slide: 590px;
+  --width-block: calc(50% - var(--gap) / 2);
   --padding: 50px;
 }
 
@@ -172,16 +172,4 @@ p{
   .gray-block{
     min-height: 232px;
   }
-}
-
-@media (max-width: 1240px) {
-
-}
-
-@media (max-width: 920px) {
-  
-}
-
-@media (max-width: 560px) {
-  
 }
