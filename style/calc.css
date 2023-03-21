@@ -49,6 +49,10 @@
   padding: 0 25px;
 }
 
+.calc__input-numder::-webkit-inner-spin-button {
+  display: none;
+}
+
 .calc__input-numder:focus{
   outline: 1px solid #FFC700;
 }
@@ -56,9 +60,11 @@
 .calc__fieldset_tariff {
   margin-bottom: 65px;
 }
+
 .calc__text_legend {
   margin-bottom: 16px;
 }
+
 .calc__wrapper-input-tariff {
   margin-right: 16px;
   display: inline-flex;
@@ -137,6 +143,22 @@
   padding: 24px;
   background-color: #FFFFFF;
   border-radius: 8px;
+}
+
+.calc__result-wrapper_show{
+  display: block;
+}
+
+.calc__order{
+  display: none;
+}
+
+.calc__order_show{
+  display: inline-block;
+}
+
+.calc__submit{
+  margin-right: 20px;
 }
 
 .calc__result {
@@ -229,12 +251,15 @@
   }
 
   .calc__total{
-    
-    min-height: auto;
+    min-height: 128px;
   }
 
   .calc__result-wrapper{
     flex-basis: 100%;
     padding: 16px;
+  }
+
+  .calc__result{
+    margin-bottom: 8px;
   }
 }

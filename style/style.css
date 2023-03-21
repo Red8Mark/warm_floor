@@ -59,13 +59,20 @@ img{
 }
 
 .button:focus, .button:active{
-  outline: 1px solid #898989;
+  outline: none;
 }
 
 .button:hover{
   background-color: transparent;
   border: 1px solid #FFC700;
   box-shadow: 0 0 5px #FFC700;
+}
+
+.button:disabled{
+  pointer-events: none;
+  background-color: #E0E0E0;
+  color: #898989;
+  cursor: default;
 }
 
 h1, h2{
